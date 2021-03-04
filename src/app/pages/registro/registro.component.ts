@@ -27,6 +27,8 @@ usuario: UsuarioModel;
   this.auth.nuevoUsuario(this.usuario).subscribe( resp =>{
 
     console.log (resp);
+  }, (err) =>{
+    console.log(err.error.error.message);
   });
 
 
